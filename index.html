@@ -8,10 +8,13 @@
   <body>
     <a-scene>
       <a-assets>
+        <a-asset-item id="glftPlane" src="Models/gravelPlane_ImageCopy2.gltf"></a-asset-item>
         <a-asset-item id="tree-obj" src="Models/gravelPlane02.obj"></a-asset-item>
         <a-asset-item id="tree-mtl" src="Models/gravelPlane02.mtl"></a-asset-item>
         <img id="tex" src="Models/1a.jpg">
       </a-assets>
+      
+      <a-entity gltf-model="obj: #gltfPlane;" material="src: Models/1a.jpg;" position="1 -0.20 1"></a-entity>
      
       <a-entity obj-model="obj: url(Models/gravelPlane02.obj); mtl: url(Models/gravelPlane02.mtl)" position="0 -0.5 0"></a-entity>
       
