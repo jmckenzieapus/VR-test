@@ -1,0 +1,243 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 3626,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<a-scene>\n  <a-assets>\n    <a-mixin id=\"cube\" geometry=\"primitive: box\"></a-mixin>\n    <a-mixin id=\"cube-hovered\" material=\"color: magenta\"></a-mixin>\n    <a-mixin id=\"cube-selected\" material=\"color: cyan\"></a-mixin>\n    <a-mixin id=\"red\" material=\"color: red\"></a-mixin>\n    <a-mixin id=\"green\" material=\"color: green\"></a-mixin>\n    <a-mixin id=\"blue\" material=\"color: blue\"></a-mixin>\n    <a-mixin id=\"yellow\" material=\"color: yellow\"></a-mixin>\n    <a-mixin id=\"sphere\" geometry=\"primitive: sphere\"></a-mixin>\n  </a-assets>\n  \n  <a-entity position=\"0 2.2 4\">\n    <a-entity camera look-controls wasd-controls>\n      <a-entity position=\"0 0 -3\"\n                geometry=\"primitive: ring; radiusInner: 0.2; radiusOuter: 0.3;\"\n                material=\"color: cyan; shader: flat\"\n                cursor=\"maxDistance: 30; fuse: true\">\n        <a-animation begin=\"click\" easing=\"ease-in\" attribute=\"scale\"\n             fill=\"forwards\" from=\"0.2 0.2 0.2\" to=\"1 1 1\" dur=\"150\"></a-animation>\n        <a-animation begin=\"fusing\" easing=\"ease-in\" attribute=\"scale\"\n             fill=\"backwards\" from=\"1 1 1\" to=\"0.2 0.2 0.2\" dur=\"1500\"></a-animation>\n      </a-entity>\n    </a-entity>\n  </a-entity>\n  \n  <a-entity position=\"-3.5 1 0\">\n    <a-entity mixin=\"cube red\">\n      <a-animation begin=\"click\" attribute=\"position\" from=\"0 0 0\"\n                   to=\"0 0 -10\" dur=\"2000\" fill=\"both\"></a-animation>\n    </a-entity>\n  </a-entity>\n\n  <a-entity position=\"0 1 0\">\n    <a-entity mixin=\"cube green\">\n      <a-animation begin=\"click\" attribute=\"rotation\" to=\"0 360 0\"\n                   easing=\"linear\" dur=\"2000\" fill=\"backwards\"></a-animation>\n    </a-entity>\n  </a-entity>\n\n  <a-entity position=\"3.5 1 0\" rotation=\"0 45 0\">\n    <a-entity mixin=\"cube blue\">\n      <a-animation begin=\"click\" fill=\"forwards\" repeat=\"1\"\n                   direction=\"alternate\" attribute=\"position\" from=\"0 0 0\"\n                   to=\"15 0 0\" dur=\"2000\"></a-animation>\n    </a-entity>\n  </a-entity>\n\n  <a-entity position=\"0 3 0\" class=\"clickable\" mixin=\"cube yellow\"\n            rotation=\"0 45 0\" scale=\".5 .5 .5\"></a-entity>\n</a-scene>\n",
+			"settings":
+			{
+				"buffer_size": 2128,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jmckenzie/Documents/GitHub/VR-test"
+	],
+	"file_history":
+	[
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3626,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1308,
+								1308
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 426.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2128,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								875,
+								875
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "vr_sublime.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
