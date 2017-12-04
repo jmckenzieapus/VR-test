@@ -15,11 +15,15 @@
         <a-asset-item id="tree-mtl" src="Models/gravelPlane02.mtl"></a-asset-item>
         <a-asset-item id="spaceWall-obj" src="Models/cdSpaceWall_004.obj"></a-asset-item>
         <a-asset-item id="spaceWall-mtl" src="Models/cdSpaceWall_004.mtl"></a-asset-item>
+
+        <img id="sky" src="Models/38804067952_65c84312ba_k.jpg">
         <img id="tex" src="Models/1a.jpg">
         <img id="spaceWallTex" src="Models/cdSpaceWall1Color.jpg">
         <a-mixin id="cube" geometry="primitive: box"></a-mixin>
         <a-mixin id="green" material="color: green"></a-mixin>
       </a-assets>
+
+
 
             <!-- Camera + cursor. -->
   <a-entity position="0 2.2 4">
@@ -69,7 +73,7 @@
                repeat="indefinite">
         </a-animation>
       </a-entity>
-
+      <a-sky src="#sky"></a-sky>
     </a-scene>
   </body>
 </html>
