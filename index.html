@@ -21,15 +21,29 @@
       
       <a-entity gltf-model="#gltfWall"></a-entity>
       <a-entity gltf-model="#gltfPlane"></a-entity>
-      <a-entity gltf-model="#gltfPlane2" position="30 0 0"></a-entity>
+      <a-entity gltf-model="#gltfPlane2" position="30 0 0" scale="0.75 0.75 0.75"></a-entity>
       
       <a-entity obj-model="obj: #tree-obj;" material="src: #tex;" position="-30 0 0"></a-entity>
 
       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow></a-sphere>
+   
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
       <!--<a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" src="Models/1a.jpg" shadow></a-plane>-->
       <a-sky color="#ECECEC"></a-sky>
+      
+      <a-entity position="-0.409 18.5 15.051" rotation="-29.782961249419266 -0.17188733853924698 7.413859777674538" light="intensity:20;distance:40;angle:38.08;decay:3;castShadow:true;shadowMapWidth:1024;shadowMapHeight:1024;type:spot"></a-entity>
+      <a-entity position="-30.757 27.691 22.482" rotation="-36.44 0 0" light="intensity:20.89;distance:60;castShadow:true;decay:3;angle:40;type:spot"></a-entity>
+      
+      <a-entity position="-4.0 4.41 -0.028" light="castShadow:true;intensity:5;distance:12;decay:3;type:point">
+        <a-animation attribute="position"
+               dur="10000"
+               delay="1000"
+               fill="forwards"
+               to="4.0 4.41 -0.028"
+               repeat="indefinite">
+        </a-animation>
+      </a-entity>
+
     </a-scene>
   </body>
 </html>
