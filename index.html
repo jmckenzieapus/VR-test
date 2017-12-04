@@ -18,6 +18,17 @@
         <img id="tex" src="Models/1a.jpg">
         <img id="spaceWallTex" src="Models/cdSpaceWall1Color.jpg">
       </a-assets>
+
+            <!-- Camera + cursor. -->
+      <a-entity camera look-controls>
+        <a-cursor id="cursor"
+          animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
+          animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
+          event-set__1="_event: mouseenter; color: springgreen"
+          event-set__2="_event: mouseleave; color: black"
+          fuse="true"
+          raycaster="objects: .link"></a-cursor>
+      </a-entity>
       
       <a-entity gltf-model="#gltfWall"></a-entity>
       <a-entity gltf-model="#gltfPlane"></a-entity>
