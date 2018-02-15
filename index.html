@@ -19,6 +19,7 @@
         <a-asset-item id="lowTree" src="Models/treeAlphaTest.glb"></a-asset-item>
         <a-asset-item id="scene" src="Models/scenery2.glb"></a-asset-item>
         <a-asset-item id="repeat" src="Models/scenery_ParkingLotPlane.glb"></a-asset-item>
+        <a-asset-item id="paver" src="Models/interlockingPavers.jpg"></a-asset-item>
 
         <img id="sky" src="Models/38804067952_65c84312ba_k.jpg">
         <img id="tex" src="Models/1a.jpg">
@@ -57,7 +58,7 @@
       <a-entity gltf-model="#gltfPlane2" position="30 0 0" scale="0.75 0.75 0.75"></a-entity>
       <a-entity gltf-model="#demoTree"></a-entity>
       <a-entity gltf-model="#lowTree"></a-entity>
-      <a-entity gltf-model="#repeat" position="0 0 40" material="src:Models/interlockingPavers.jpg; repeat:20 20"></a-entity>
+      <a-entity gltf-model="#repeat" position="0 0 10" material="src:#paver; repeat:20 20;"></a-entity>
       
       <a-entity obj-model="obj: #tree-obj;" material="src: #tex;" position="-30 0 0"></a-entity>
 
